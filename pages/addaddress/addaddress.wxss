@@ -1,0 +1,11 @@
+page {
+  background-color: #F7F7F7;
+   padding-top: 20rpx;
+}
+ .saveaddress {
+   background-color: #ffcc33;
+   width: 100%;
+   color: white;
+   position:fixed; 
+   bottom: 0;
+}

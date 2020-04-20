@@ -1,0 +1,35 @@
+page {
+  background-color: #F7F7F7;
+  /* padding: 20px; */
+  padding-top: 30rpx;
+}
+.result {
+   /* margin: 0 auto; */
+   position: relative;
+}
+.result .pages {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+   margin: 0 auto;
+   width: 120rpx;
+   height: 120rpx;
+   margin-bottom: 20rpx;
+}
+.result .good {
+   font-size: 40rpx;
+   margin-top: 30rpx;
+   text-align: center;
+   margin-bottom: 120rpx;
+}
+.result .check {
+   width: 80%;
+   margin-bottom: 25rpx;
+   margin-top: 25rpx;
+   color: white;
+   background: #3ECCA6;
+}
+.result .back {
+   width: 80%;
+   margin-top: 25rpx;
+}

@@ -1,0 +1,76 @@
+page {
+  background-color: #F7F7F7;
+}
+.tab1 {
+   margin: 25rpx;
+   padding: 15rpx;
+   background: white;
+}
+.tab1 .pay {
+   padding-top: 15rpx;
+   background: white;
+   height: 50rpx;
+   line-height: 50rpx;
+   display: flex;
+}
+.tab1 .pay .goods {
+    font-weight: 800;
+    flex: 1;
+    font-size: 30rpx;
+}
+.tab1 .pay .payamount {
+   font-size: 30rpx;
+   margin-right: 15rpx;
+}
+.tab1 .picpart {
+   display: flex;
+   margin-top: 20rpx;
+}
+.tab1 .picpart .far {
+  flex: 1;
+}
+.tab1 .picpart .far .pic {
+   width:  120rpx;
+   height: 120rpx;
+}
+.tab1 .picpart .price {
+    font-size: 30rpx;
+    margin-right: 15rpx;
+    color: #ffcc33;
+    font-size: 35rpx;
+    font-weight: bold;
+}
+.tab1 .btn {
+   background: white;
+   display: relative;
+   padding-bottom: 25rpx;
+}
+.tab1 .btn .needpay {
+   width: 30%;
+   height: 80rpx;
+   line-height: 80rpx;
+   right: -200rpx;
+   background-color: #ffcc33;
+   color: white;
+   font-weight: 500;
+   font-size: 30rpx;
+}
+.tab1 .btn .got {
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  right: -200rpx;
+  background-color: #3ECCA6;
+  color: white;
+  font-weight: 500;
+  font-size: 30rpx;
+}
+.tab1 .btn .detail {
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  right: -190rpx;
+  background-color: white;
+  font-weight: 500;
+  font-size: 30rpx;
+}

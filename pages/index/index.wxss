@@ -1,0 +1,207 @@
+/**index.wxss**/
+page {
+  background-color: #F7F7F7;
+  padding: 20px;
+}
+.container {
+  border-radius: 10rpx;
+   width: 90%;
+   padding-top: 20rpx;
+   padding-left: 20rpx;
+   height: 120rpx;
+   display: flex;
+   background: white;
+}
+.name {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: grey;
+}
+.name_bold {
+  font-weight: bold;
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+  color: black;
+}
+.time {
+   margin-left: 20rpx;
+}
+.button {
+  position: relative;
+  left: 120rpx;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  width: 120rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: white;
+  border-radius: 25rpx;
+  background-color: #3ECCA6;
+}
+.part2 {
+  border-radius: 10rpx;
+  height: 120rpx;
+  width: 90%;
+  padding-left: 20rpx;
+  line-height: 120rpx;
+  border-top: 1px solid #eee;
+  background: white;
+  display: block;
+}
+.left {
+  float: left;
+}
+.right {
+  margin-top: 20rpx;
+  float: right;
+  margin-right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: #689AFC;
+}
+.new {
+  position: relative;
+  top: -20rpx;
+  left: 15%;
+}
+.swiper-container {
+  width: 90%;
+  margin-top: 30rpx;
+  border-radius: 15rpx;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.orderfood {
+  margin-top: 20rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  width: 90%;
+  /* padding-left: 20rpx; */
+  display: flex;
+  font-weight: bold;
+}
+.orderpart {
+   flex: 1;
+   background-color: white;
+   margin-right: 15rpx;
+}
+.foodgive {
+  flex: 1;
+  height: 150rpx;
+  line-height: 150rpx;
+  background-color: white;
+  position: relative;
+}
+.orderpart .new {
+  position: relative;
+  top: 23%;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #3ECCA6;
+  border-radius: 50%;
+}
+.orderpart .new .one {
+  margin-left: 10rpx;
+}
+
+.orderpart .content {
+  position: relative;
+  left: 170rpx;
+  top: -50%;
+}
+.foodgive .blue {
+  position: relative;
+  top: 23%;
+  left: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #689AFC;
+  border-radius: 50%;
+}
+.foodgive .content {
+  position: relative;
+  left: 170rpx;
+  top: -50%;
+}
+.foodgive .blue .two {
+  margin-left: 10rpx;
+}
+.juan {
+  margin-top: 30rpx;
+}
+.juan .one {
+  display: flex;
+}
+.juan .name {
+  font-weight: 700;
+  font-size: 35rpx;
+  flex: 3;
+}
+.juan .more {
+   flex: 1;
+   font-size: 30rpx;
+}
+.juan .price {
+  width: 90%;
+  height: 150rpx;
+  padding: 10rpx;
+  padding-left: 10rpx;
+  margin-top: 20rpx;
+  background-color: white;
+  display: flex;
+}
+.juan .price .use {
+   border-right: 1px dotted grey;
+   width: 30%;
+}
+.juan .price .use .bold {
+  font-weight: bold;
+  font-size: 40rpx;
+  line-height: 70rpx;
+}
+.juan .price .use .it {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: grey;
+}
+.juan .price .tongyong {
+  padding: 15rpx;
+}
+.juan .price .tongyong .gotit {
+  display: flex;
+}
+.juan .price .tongyong .gotit .bold {
+   font-weight: bold;
+   font-size: 30rpx;
+   flex: 1;
+}
+.juan .price .tongyong .gotit .ling {
+  background: #FECB2E;
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 25rpx;
+  font-size: 25rpx;
+}
+.juan .price .tongyong .lasttime {
+   display: flex;
+   margin-top: 25rpx;
+}
+.juan .price .tongyong .lasttime .old {
+   flex: 2;
+   font-size: 30rpx;
+   color: grey;
+}
+.juan .price .tongyong .lasttime .fen {
+  margin-left: 15rpx;
+  color: grey;
+  font-size: 30rpx;
+}

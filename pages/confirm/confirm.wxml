@@ -1,0 +1,88 @@
+
+<view class='part'>
+    <i-icon type="coordinates_fill" size="32" color="#80848f" />
+    <view class='address'>
+       <view class='bold'>平安金融中心66号楼6单元</view>
+       <view class='phone'>
+         <text class='name'>李白</text>
+         <text>180****1234</text>
+       </view>
+    </view>
+    <i-icon type="enter" size="30" color="#80848f" class="one" bindtap="chooseaddress"/>
+</view>
+<view class='time'>
+ <i-icon type="time_fill"  size="30" color="#80848f"/>
+ <text class='right'>立即送出</text>
+ <text class='item'>(大约 {{time}}送达)</text>
+ <i-icon type="enter" size="30" color="#80848f" bindtap="rightnow"/>
+</view>
+<!-- 订单明细 -->
+<view class='detail'>
+ <view class='detail_order'>订单明细</view>
+ <view>
+ <!-- 商品信息 -->
+<view class='part2' wx:for="{{list}}" wx:key="id">
+  <view class='pcs'>
+    <image src='../../img/1.jpg' class='image'></image>
+  </view>
+  <view class='food-name'>
+    <view class='foods'>{{item.title}}</view>
+    <view class='price'>{{item.price}}元</view>
+  </view>
+  <view class='quantity'>
+   x {{item.num}}
+  </view>
+</view>
+ </view>
+</view>
+<!-- 其他的费用 -->
+<view class='delivery'>
+ <view class='totol'>
+  <text class='bold'>包装费</text>
+  <text class='new'>￥3</text>
+ </view>
+ <view class='totol'>
+  <text class='bold'>配送费</text>
+  <text class='new'>￥5</text>
+ </view>
+</view>
+<!-- 减满配送 -->
+<view class='delivery'>
+ <view class='totol'>
+  <text class='bold yellow'>减 减满配送费</text>
+  <text class='new'>-￥5</text>
+ </view>
+ <view class='totol'>
+  <text class='bold'>优惠卷</text>
+  <text class='new'>-￥10</text>
+ </view>
+</view>
+<!-- 订单总额 -->
+<view class='delivery'>
+ <view class='totol'>
+  <text class='bold '>订单总额</text>
+  <text class='new'>￥{{totalPrice + 3 + 5}}</text>
+ </view>
+ <view class='totol'>
+  <text class='bold'>实付</text>
+  <text class='new color'>￥{{totalPrice + 3 + 5 - 10 - 5}}</text>
+ </view>
+</view>
+<!-- 底部状态 -->
+<view class='footer'>
+   <view class='cancel'>应付{{totalPrice + 3 + 5 - 10 - 5}}元</view>
+   <button class='order' bindtap="payit">下单支付</button>
+</view>
+<!-- 时间选择器 -->
+<view class='footer_part'>
+<van-datetime-picker
+  type="time"
+  value="{{ currentDate }}"
+  min-date="{{ minDate }}"
+  max-date="{{ maxDate }}"
+  bind:input="onInput"
+  bind:confirm= "confirmTime"
+  bind:cancel = "cancel"
+  wx:if="{{status}}"
+/>
+</view>

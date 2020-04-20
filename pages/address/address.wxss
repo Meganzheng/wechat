@@ -1,0 +1,36 @@
+page {
+  background-color: #F7F7F7;
+   padding-top: 20rpx;
+}
+.oneline {
+   background: white;
+   height: 150rpx;
+   line-height: 80rpx;
+   padding: 20rpx;
+   border-bottom: 1px solid #eeee;
+}
+.oneline .part {
+   margin-top: 30rpx;
+   display: flex;
+   /* padding-top: 20rpx; */
+   background: white;
+}
+.oneline .part .address {
+  margin-left: 15rpx;
+  line-height: 60rpx;
+  flex: 1;
+  font-size: 30rpx;
+}
+.oneline .part .address .phone .name {
+    margin-right:  20rpx;
+}
+/* .footer {
+  
+} */
+ .btn {
+   background-color: #3ECCA6;
+   width: 100%;
+   color: white;
+   position:fixed; 
+   bottom: 0;
+}

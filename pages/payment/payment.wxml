@@ -1,0 +1,6 @@
+<view class='result'>
+ <image src='../../img/sm.png' class='pages'></image>
+ <view class='good'>棒棒的！付款成功啦</view>
+ <button class='check' bindtap="check">查看订单</button>
+ <button class='back'  bindtap="back">回到首页</button>
+</view>

@@ -1,0 +1,33 @@
+<view class='price'>
+  <view class='use'>
+     <view class='bold'>￥20</view>
+     <view class='it'>满足300元可用</view>
+  </view>
+  <view class='tongyong'>
+    <view class='gotit'>
+    <text class='bold'>通用</text>
+    <text class='ling'>领取</text>
+    </view>
+     <view class='lasttime'>
+     <text class='old'>有效期至2018-10-1</text>
+     <text class='fen'>剩 {{list.account}} 份</text>
+     </view>
+  </view>
+</view>
+<view class='price'>
+  <view class='use'>
+     <view class='bold'>￥50</view>
+     <view class='it'>满足500元可用</view>
+  </view>
+  <view class='tongyong'>
+    <view class='gotit'>
+    <text class='bold'>通用</text>
+    <text class='ling'>领取</text>
+    </view>
+     <view class='lasttime'>
+     <text class='old'>有效期至2018-10-1</text>
+     <text class='fen'>剩 {{list.account}} 份</text>
+     </view>
+  </view>
+</view>
+

@@ -1,0 +1,89 @@
+<!--index.wxml-->
+<view class="container">
+ <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
+ <view class='name'>
+     <view class='name_bold'>郑小妞的餐厅</view>
+     <text>创意菜馆</text>
+     <text class='time'>9:00 - 24:00</text>
+ </view>
+ <view class='button'>营业中</view>
+</view>
+<!-- 第二部分 -->
+ <view class='part2'>  
+  <view>
+  <view class='left'>
+    <i-icon type="coordinates_fill" size="28" color="#80848f" />
+    <text class='text'>福田区益田路5033号</text>
+  </view>
+  <view class='right'>
+    <i-icon type="mobilephone" size="28" color="#ffff"  class="new"/>
+  </view>
+  </view>
+ </view>
+ <!-- 轮播图 -->
+ <view class="swiper-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" class="swiper" indicator-active-color='white'>
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="img" />
+       </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 点餐 -->
+<view class='orderfood'>
+ <view class='orderpart' bindtap='goorder'>
+   <view class='new'>
+     <i-icon type="coupons" size="28" color="#ffff" class='one'/>
+   </view>
+   <view class='content'>食堂点餐</view>
+ </view>
+  <view class='foodgive' bindtap='goorder'>
+   <view class='blue'>
+   <i-icon type="group"  size="28" color="#ffff" class='two'/>
+   </view>
+   <view class='content'>外卖点餐</view>
+ </view>
+</view>
+<!-- 优惠卷 -->
+<view class='juan'>
+<view class='one'>
+     <view class='name'>优惠卷</view>
+     <view class='more' bindtap='ontTap'>
+        <text>更多</text>
+        <i-icon type="enter"  size='20'/>
+     </view>
+</view>
+<view class='price'>
+  <view class='use'>
+     <view class='bold'>￥50</view>
+     <view class='it'>满足500元可用</view>
+  </view>
+  <view class='tongyong'>
+    <view class='gotit'>
+    <text class='bold'>通用</text>
+    <text class='ling'>领取</text>
+    </view>
+     <view class='lasttime'>
+     <text class='old'>有效期至2020-10-1</text>
+     <text class='fen'>剩 {{data.fen}} 份</text>
+     </view>
+  </view>
+</view>
+<view class='price'>
+  <view class='use'>
+     <view class='bold'>￥20</view>
+     <view class='it'>满足300元可用</view>
+  </view>
+  <view class='tongyong'>
+    <view class='gotit'>
+    <text class='bold'>通用</text>
+    <text class='ling'>领取</text>
+    </view>
+     <view class='lasttime'>
+     <text class='old'>有效期至2020-10-1</text>
+     <text class='fen'>剩 {{data.fen}} 份</text>
+     </view>
+  </view>
+</view>
+</view>

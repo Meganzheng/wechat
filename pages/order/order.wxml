@@ -1,0 +1,61 @@
+<!--pages/we.wxml-->
+<view class='order'>
+ <view class='name'> 
+  <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
+   <text class='one'>一层A区15桌</text>
+ </view>
+</view>
+<!-- 文字滚动 -->
+<swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+<block wx:for="{{msgList}}" wx:key='id'>
+<navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+<swiper-item>
+<view class="swiper_item">
+    <text class='left'> {{item.title}}</text>
+   <i-icon type="enter"  class='right' size='20' bindtap="itshow"/>
+</view>
+</swiper-item>
+</navigator>
+</block>
+</swiper>
+<i-modal title="" visible="{{visible2}}"  bind:ok="handleClose2" bind:cancel="handleClose2">
+    <view class='man'>满足180减30元,满90减10元</view>
+    <view class='new'>新用户首单立减15元</view>
+</i-modal>
+<!-- 选菜单 -->
+<view id="content">
+  <view class="menu">
+    <view wx:for="{{list}}" wx:key= "id"  bindtap="chooseCategory" data-target="ickt{{item.id}}" style="height: {{height / list.length}}px; line-height: {{height/list.length}}px">
+      {{item.text}}
+    </view>
+  </view>
+  <!-- 右侧的滚动区域 -->
+  <scroll-view class="scroll" style="height:{{height}}px" scroll-y scroll-into-view="{{target}}">
+    <!-- 每一个分类的区域 -->
+    <view id="ickt{{value.id}}" wx:for="{{list}}"  wx:for-item="value" wx:key='id'>
+      <!-- 每一个分类的具体单品 -->
+      <view class="item" wx:for="{{value.data}}" wx:key='id'>
+         <view class="product-img">
+          <image src="../../img/1.jpg" class="pic"></image>
+         </view>
+         <view class="product-info">
+            <view class="product-name">{{item.title}}</view>
+            <view class="product-saled">已售{{item.sales}}份</view>
+            <view class="product-price">￥{{item.price}}</view>
+         </view>
+         <!-- 加与减 -->
+         <view class="operate">
+            <block wx:if="{{item.num}}">
+              <view catchtap="minus" data-category="{{value.id}}" data-productid="{{item.id}}"  class="minus">-</view>
+              <view class="number">{{item.num}}</view>
+            </block>
+            <view catchtap='plus' data-category="{{value.id}}" data-productid="{{item.id}}"  class="plus">+</view>
+         </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view id="footer">
+  <view>共{{amount}}元</view>
+  <view class="ok" catchtap='ok'>选好了</view>
+</view>

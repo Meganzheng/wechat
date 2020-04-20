@@ -1,0 +1,11 @@
+
+<form bindsubmit="reg">
+ <i-panel title="基础用法">
+    <i-input value="{{ value1 }}" name="contact" title="联系人" autofocus placeholder="名字" maxlength="10"  bind:change="myInput"/>
+    <i-input value="{{ value2 }}" name="phone"  type="number" title="手机号" placeholder="请输入手机号" maxlength="11" bind:change="myPhone"/>
+    <i-input value="{{ value3 }}" name="address" type="textarea" title="详细地址" placeholder="请输入详细地址(最多50字)" maxlength="50" bind:change="address" />
+    <i-input value="{{ value4 }}" name= "area" title="门牌号" placeholder="例：1单元101号" maxlength="30" bind:change="door" />
+</i-panel>
+<button class='saveaddress' form-type="submit">保存地址</button>
+<i-toast id="toast" />
+</form>

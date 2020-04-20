@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-avatar": "../../dist/avatar/index",
+    "i-icon": "../../dist/icon/index",
+    "i-modal": "../../dist/modal/index",
+    "van-sidebar": "../../miniprogram_npm/@vant/weapp/sidebar/index",
+    "van-sidebar-item": "../../miniprogram_npm/@vant/weapp/sidebar-item/index"
+  },
+  "navigationBarTitleText": "食堂点餐"
+}

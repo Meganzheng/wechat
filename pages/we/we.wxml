@@ -1,0 +1,9 @@
+<!--pages/we.wxml-->
+<view class='hearder'>
+ <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" class='pic' size="large"></i-avatar>
+ <text class='name'>郑小妞</text>
+ <i-cell-group class='list'>
+    <i-cell title="优惠卷" is-link url="/pages/got/got"></i-cell>
+    <i-cell title="收货地址" is-link url="/pages/address/address"></i-cell>
+</i-cell-group>
+</view>

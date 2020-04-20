@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "编辑收货地址",
+  "usingComponents": {
+    "i-icon": "../../dist/icon/index",
+    "i-button": "../../dist/button/index",
+    "i-input": "../../dist/input/index",
+    "i-modal": "../../dist/modal/index"
+  }
+}

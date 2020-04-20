@@ -1,0 +1,83 @@
+<!--logs.wxml-->
+<i-tabs current="{{ current }}" color="#3ECCA6" bindchange="handleChange">
+    <i-tab key="tab1" title="全部">
+    </i-tab>
+    <i-tab key="tab2" title="待付款"></i-tab>
+    <i-tab key="tab3" title="待收取"></i-tab>
+    <i-tab key="tab4" title="已完成"></i-tab>
+</i-tabs>
+<!-- 全部 -->
+<view wx:if="{{current === 'tab1'}}" class='tab1'>
+   <view class='pay'> 
+      <text class='goods'>烧花鸡、包裹肉等共6件</text>
+      <text class='payamount'>待付款</text>
+   </view>
+    <view class='picpart'>
+      <view class='far'> 
+       <image src='../../img/1.png' class='pic'></image>
+      </view>
+      <text class='price'>185元</text>
+    </view>
+   <view>
+    <view class='btn'>
+       <button class='needpay' bindtap="pay">立即付款</button>
+    </view>
+   </view>
+</view>
+<!-- 待付款 -->
+<view wx:if="{{current === 'tab2'}}" class='tab1'>
+     <view class='pay'> 
+      <text class='goods'>烧花鸡、包裹肉等共6件</text>
+      <text class='payamount'>待付款</text>
+   </view>
+    <view class='picpart'>
+      <view class='far'> 
+       <image src='../../img/1.png' class='pic'></image>
+      </view>
+      <text class='price'>185元</text>
+    </view>
+   <view>
+    <view class='btn'>
+       <button class='needpay'>立即付款</button>
+    </view>
+   </view>
+</view>
+<!-- 待收取 -->
+<view wx:if="{{current === 'tab3'}}" class='tab1'>
+     <view class='pay'> 
+      <text class='goods'>烧花鸡、包裹肉等共6件</text>
+      <text class='payamount'>待收取</text>
+   </view>
+    <view class='picpart'>
+      <view class='far'> 
+       <image src='../../img/1.png' class='pic'></image>
+      </view>
+      <text class='price'>185元</text>
+    </view>
+   <view>
+    <view class='btn'>
+       <button class='got' bindtap="pick">确认收取</button>
+    </view>
+   </view>
+</view>
+<view wx:if="{{current === 'tab4'}}" class='tab1'>
+     <view class='pay'> 
+      <text class='goods'>烧花鸡、包裹肉等共6件</text>
+      <text class='payamount'>已完成</text>
+   </view>
+    <view class='picpart'>
+      <view class='far'> 
+       <image src='../../img/1.png' class='pic'></image>
+      </view>
+      <text class='price'>185元</text>
+    </view>
+   <view>
+    <view class='btn'>
+       <button class='detail' bindtap="direct">详情</button>
+    </view>
+   </view>
+</view>
+<i-modal title="" visible="{{ visible1 }}" bind:ok="handleClose" bind:cancel="handleClose1">
+    <view>确认已收到吗？</view>
+</i-modal>
+ <i-toast id="toast" />

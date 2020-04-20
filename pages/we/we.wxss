@@ -1,0 +1,16 @@
+/* pages/we.wxss */
+.hearder {
+    padding-top: 30rpx;
+}
+.hearder .pic {
+  padding-left: 30rpx;
+}
+.hearder .name {
+  padding-top: 20rpx;
+  margin-left: 30rpx;
+  /* margin-top: 20rpx; */
+  font-weight: 700;
+}
+.hearder .list {
+   margin-bottom: 15rpx;
+}

@@ -1,0 +1,78 @@
+
+<view class='part'>
+    <i-icon type="coordinates_fill" size="32" color="#80848f" />
+    <view class='address'>
+       <view class='bold'>平安金融中心66号楼6单元</view>
+       <view class='phone'>
+         <text class='name'>李白</text>
+         <text>180****1234</text>
+       </view>
+    </view>
+</view>
+<view class='time'>
+ <i-icon type="time_fill"  size="30" color="#80848f"/>
+ <text class='right'>立即送出</text>
+ <text class='item'>(大约  12：01送达)</text>
+</view>
+<!-- 订单明细 -->
+<view class='detail'>
+ <view class='detail_order'>订单明细</view>
+ <view>
+ <!-- 商品信息 -->
+<view class='part2' wx:for="{{list}}" wx:key='id'>
+  <view class='pcs'>
+    <image src='../../img/1.jpg' class='image'></image>
+  </view>
+  <view class='food-name'>
+    <view class='foods'>{{item.title}}</view>
+    <view class='test'></view>
+    <view class='price'>￥{{item.price}}</view>
+  </view>
+  <view class='quantity'>
+   x {{item.num}}
+  </view>
+</view>
+ </view>
+</view>
+<!-- 其他的费用 -->
+<view class='delivery'>
+ <view class='totol'>
+  <text class='bold'>包装费</text>
+  <text class='new'>￥3</text>
+ </view>
+ <view class='totol'>
+  <text class='bold'>配送费</text>
+  <text class='new'>￥5</text>
+ </view>
+</view>
+<!-- 减满配送 -->
+<view class='delivery'>
+ <view class='totol'>
+  <text class='bold yellow'>减 减满配送费</text>
+  <text class='new'>-￥5</text>
+ </view>
+ <view class='totol'>
+  <text class='bold'>优惠卷</text>
+  <text class='new'>-￥10</text>
+ </view>
+</view>
+<!-- 订单总额 -->
+<view class='delivery'>
+ <view class='totol'>
+  <text class='bold '>订单总额</text>
+  <text class='new'>￥{{ totalPrice + 3 + 5}}</text>
+ </view>
+ <view class='totol'>
+  <text class='bold'>实付</text>
+  <text class='new color'>￥{{totalPrice + 3 + 5 - 15 }}</text>
+ </view>
+</view>
+<!-- 底部状态 -->
+<view class='footer'>
+   <!-- <view class='cancel'>已取消</view> -->
+   <button class='delate' bindtap="delate">删除订单</button>
+   <button class='order' bindtap="orderagain">再次购买</button>
+</view>
+<i-modal title="" visible="{{visible2}}"  bind:ok="handleClose2" bind:cancel="handleClose2">
+    <view class='man'>确认要删除订单吗？</view>
+</i-modal>

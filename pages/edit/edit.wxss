@@ -1,0 +1,19 @@
+page {
+  background-color: #F7F7F7;
+   padding-top: 20rpx;
+}
+ .saveaddress {
+   background-color: white;
+   width: 50%;
+   color: black;
+   position:fixed; 
+   bottom: 0;
+}
+.delete {
+  background-color: #ffcc33;
+  color:  white;
+  width: 50%;
+  position:fixed;
+  right: 0;
+  bottom: 0;
+}
